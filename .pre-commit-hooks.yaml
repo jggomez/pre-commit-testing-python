@@ -1,20 +1,20 @@
 - id: unit-tests-poetry
-  name: unittestspoetry
-  description: Runs unit tests
+  name: Runs unit tests with poetry
+  description: Runs unit tests with poetry
   entry: poetry run pytest test/bp
   pass_filenames: false
   language: system
   
 - id: unit-tests
-  name: unittests
+  name: Runs unit tests
   description: Runs unit tests
   entry: python -m pytest test/bp
   pass_filenames: false
   language: system
   
 - id: integration-tests
-  name: integrationtests
-  description: Runs unit tests
+  name: Runs integration tests
+  description: Runs integration tests
   entry: ./test.sh
   pass_filenames: false
   language: system
