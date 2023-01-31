@@ -1,6 +1,20 @@
-- id: unit_tests
-  name: unittests
+- id: unit-tests-poetry
+  name: unittestspoetry
   description: Runs unit tests
   entry: poetry run pytest test/bp
+  pass_filenames: false
+  language: system
+  
+- id: unit-tests
+  name: unittests
+  description: Runs unit tests
+  entry: poetry run pytest test
+  pass_filenames: false
+  language: system
+  
+- id: integration_tests
+  name: integrationtests
+  description: Runs unit tests
+  entry: ./test.sh
   pass_filenames: false
   language: system
