@@ -1,0 +1,6 @@
+- id: unit_tests
+  name: unittests
+  description: Runs unit tests
+  entry: poetry run pytest test/bp
+  pass_filenames: false
+  language: system
